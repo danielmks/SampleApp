@@ -1,0 +1,25 @@
+PostgreSQL == latest
+nodeJS v18.19.0
+Apache Maven 3.9.9
+Angular CLI: 18.2.3
+npm 10.2.3
+npm i -g @angular/cli
+
+
+Run in Docker
+You can build the image and run the container with Docker.
+
+Build backend project
+cd backend
+mvn package
+
+Build fontend project
+cd frontend
+npm install
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run build
+
+
+
+Build images and run containers
+docker-compose up --build
